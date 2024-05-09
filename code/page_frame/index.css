@@ -81,7 +81,9 @@ font-family
   font-weight: bolder;
   background-color:rgb(21, 33, 33);
 }
-
+a{
+  text-decoration: none;
+}
 .user_el{
   margin-top: 10px;
   padding-top: 10px;
