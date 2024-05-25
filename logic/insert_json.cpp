@@ -7,11 +7,10 @@ bool CanInsert(const std::string& line, const std::string& str)
 {
     std::string numLine="";
     std::string numStr="";
-    for(auto& el:line)if(el>='0'&&el<='9')numLine+=el;
-    for(auto& el:str)if(el>='0'&&el<='9')numStr+=el;
+    for(size_t i=line.find_last_of("points"); i<line.size();++i)if(line.at(i)>='0'&&line.at(i)<='9')numLine+=line.at(i);
+    for(size_t i=str.find_last_of("points"); i<str.size();++i)if(str.at(i)>='0'&&str.at(i)<='9')numStr+=str.at(i);
 
-
-    return std::atoi(numLine.c_str())>std::atoi(numStr.c_str());
+    return std::atoi(numLine.c_str())<std::atoi(numStr.c_str());
 }
 void WriteFile(const char* path, std::string str)
 {
