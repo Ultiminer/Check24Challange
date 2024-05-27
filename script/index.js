@@ -10,7 +10,16 @@ const InputFields=document.getElementById('log_in_form');
 const HomeField=document.getElementById('home_screen');
 const LoginResponse=document.getElementById('resp_form');
 const UserFile="../../temp_data/user_data.txt";
-
+fetch('/api/users/verify').then(x=>x.json())
+.then(t=>{
+    const {msg,id}=JSON.parse(t);
+    LoginResponse.textContent=String(msg);
+   if(Number(id)===1)
+    {
+        signIn.textContent='logged in :)';
+        InputFields.style='display:none';
+        HomeField.style='display:initial';
+    } });
 
 const sendMsg=function(msg,path)
 {

@@ -29,7 +29,7 @@ if(req.body)
 {
     const {user,pw}=req.body;
     fs.writeFile(userPath,'\n '+String(user)+' : '+String(hashMe(pw)),{flag:'a'},(err)=>{if(err){console.log(err);}});
-    fs.writeFile(statPath,JSON.stringify({name:String(user),points:0}),(err)=>{if(err){console.log(err);}});
+    fs.writeFile(statPath,JSON.stringify({name:String(user),community:'NONE',points:0}),(err)=>{if(err){console.log(err);}});
 }
 
 });
