@@ -1,0 +1,1 @@
+{"ip":"127.0.0.1","pointA":"2","pointB":"1","countryA":"Hungary","countryB":"Switzerland"},{"ip":"127.0.0.1","pointA":"1","pointB":"0","countryA":"Germany","countryB":"Scotland"}

@@ -1,7 +1,0 @@
-key:Alfred guild: King
-key:Bob guild: King
-key:Huso guild: King
-key:Lel guild: King
-key:Anton guild: Knight
-key:Rachel guild: Knight
-key:Sebastian guild: Knight

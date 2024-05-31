@@ -4,12 +4,15 @@
 <meta charset="utf-8">
 <title>The Betting Champions</title>
 <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="network.css">
+<link rel="stylesheet" href="leaderboard.css">
+
 </head>
 <body class="body">
     <div class="task_bar">
         <img class="user_img"src="user.png" >
-        <div class="user_el">Username <div class="user_el_pt"><br > 000 points</div>
-        </div>
+        <div class="user_el" ><div id="user_el">Username </div><div class="user_el_pt" id="user_points" style="margin-top:20px"><br > 000 points</div>
+      </div>
         <img class="task_img"src="home.png" >
         <a href="index.html"><div class="task_el" >Home
         </div></a>
@@ -20,6 +23,11 @@
         </div></a>
       </div>
     <div class="big_txt">Community</div>
+    <div class="lsearchbar_frame" style="width:400px;">
+      <div class="lsearchbar_txt" style="width:200px;"id="create">Create/Join</div>
+      <input class="lsearchbar_form"  style="width:200px;"type="text" id="comm_name" name="lcommunity" value="Community">
+    </div>
+    <table class="ltable ltxt" id="community"></table>
 
 </body>
 <footer >

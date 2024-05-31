@@ -1,1 +1,0 @@
-{"name":"Hue","community":"NONE","points":0}

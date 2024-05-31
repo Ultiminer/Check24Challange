@@ -4,12 +4,14 @@
 <meta charset="utf-8">
 <title>The Betting Champions</title>
 <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="leaderboard.css">
+
 </head>
 <body class="body">
 <div class="big_txt">We are the Champions... of betting</div>
   <div class="task_bar">
     <img class="user_img"src="user.png" >
-    <div class="user_el">Username <div class="user_el_pt"><br > 000 points</div>
+    <div class="user_el" ><div id="user_el">Username </div><div class="user_el_pt" id="user_points" style="margin-top:20px"><br > 000 points</div>
     </div>
     <img class="task_img"src="home.png" >
     <a href="index.html"><div class="task_el" >Home
@@ -27,18 +29,30 @@
 <div class="norm_txt">Password:</div>
 <input class="norm_txt" style="color:black" type="password" id="lpw" name="lpw" value="">
 </div>
-<div type="submit" class="button_right">Sign Up</div>
-<div type="button" class="button_left">
-    Sign In
-</div>
+<div type="submit" class="button mid">Sign In</div>
+
 <div class="norm_txt" id="resp_form"></div>
 </div>
-<div class="center hidden" id="home_screen">
-  <div class="input_fields">
-    <div class="norm_txt"> You are looged in now :)</div>
+<div class="hidden" id="home_screen">
+  <div class="drop_down"><div class="ltable" id="community_preview"></div></div>
+
+  <div class="button mid_down" id="bet">Bet</div>
+  <div class="bet_box">
+  <div class="bet_el_pm_big_txt" style="margin-left:18px; margin-top:-20px;" id="bet_num_a">0</div>
+  <div class="bet_el_pm" style="  left:30%; top:15%;"><div class="bet_el_pm_txt"id="bet_num_a_inc">+</div><div class="bet_el_pm_txt"id="bet_num_a_dec">-</div></div>
+  <div class="bet_el_pm_big_txt" style="margin-left:75px;margin-top:-20px; font-size:150px;">:</div>
+  <div class="bet_el_pm" style="  left:80%; top:15%;"><div class="bet_el_pm_txt" id="bet_num_b_inc">+</div><div class="bet_el_pm_txt"id="bet_num_b_dec">-</div></div>
+  <div class="bet_el_pm_big_txt" style="margin-left:10px; margin-top:-5px;" id="bet_num_b">0</div>
   </div>
+  <div class="upcoming_box">
+  <div class="upcoming_txt">Upcoming Match</div>
+  <div class="upcoming_txt" style="color:blue;margin-top:30px;font-weight: bolder;" id="upcoming_match_teamsA">Germany:Brazil</div>
+  <div class="bet_el_pm_txt" style="color:blue;margin-top:10px;font-weight: bolder; font-size:10px;" id="upcoming_match_teamsB">Switzerland:Austria</div>
 
-
+  <div class="upcoming_txt" style="text-align: left; margin-top:10px;">Starting in: <div style="display:inline;"id="upcoming_match_time">00:00:00</div></div>
+  </div>
+  <div class="prev_bets_box"><div id="prev_bet"></div></div>
+  
 </div>
 
 
